@@ -5,9 +5,12 @@ const mongoose = require("mongoose");
 
 app.use(bodyParser.json());
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/shop", {
-  useNewUrlParser: true
-});
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/shop-cyrille",
+  {
+    useNewUrlParser: true
+  }
+);
 
 // Initialiser les collections
 // Mongoose va prendre connaissance de ces collections
